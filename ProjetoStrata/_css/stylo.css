@@ -54,8 +54,10 @@ blockquote {
     padding: 0.25em 0.65em;
     font-family: 'Courier New', Courier, monospace;
 }
-pre code {
-    display: block;
+ .code {
+    display:block;
+        background: rgba(187, 187, 187, 0.383);
+        width: 55%;
 }
 ul ol {
     margin: 0;
@@ -85,6 +87,25 @@ input,label,textarea {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
+    border: 3px solid transparent;
+}
+input, textarea,  select {
+    background: rgba(172, 169, 169, 0.465);
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
+input:focus, textarea:focus {
+    border: 3px solid #49bf9d;
+    outline: none;
+}
+textarea{
+    height: 10em;
+}
+input[type="radio"],input[type="checkbox"]{
+    
+    width: auto;
 }
 /* GRID*/
 .row {
@@ -157,6 +178,7 @@ color: inherit;
     border-radius: 5px;
     font-size: .8em;
  border-top: 25px;
+ width: auto;
 }
 .button-default-stroke {
     background-color: white;

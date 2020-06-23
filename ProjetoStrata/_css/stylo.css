@@ -44,6 +44,9 @@ Title h6{
 sub,sup {
     font-size: 12px;
 }
+.element p, pre {
+    display: block;
+}
 blockquote {
     border-left: 5px solid #efefef;
     margin: 2em 0;
@@ -300,8 +303,20 @@ overflow: hidden;
     font-size: 2em;
 
 }
+.copyright {
+    list-style-type: none;
+}
 .copyright li {
 display: inline-block;
-left: 0;
+border-left: solid 1px rgba(255, 255, 255,0.25);
+padding: 0 0.75em;
+line-height: 1;
+font-size: .8em;
 
+}
+.copyright li:first-child {
+    border-left: 0;
+}
+.copyright li:last-child {
+    border-right: 0;
 }
